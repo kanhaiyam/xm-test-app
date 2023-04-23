@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HistoricalData;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::group(['prefix' => 'history'], function ($router) {
+    Route::get('/', function () {
+    return view('history');
+    });
+    Route::post('/', [HistoricalData::class, 'show'])->name('history.show');
 });
