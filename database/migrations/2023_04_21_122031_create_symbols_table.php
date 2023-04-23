@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('m_category', 1);
             $table->float('lot_size', 8, 2);
             $table->enum('is_test', ['Y', 'N']);
-            $table->timestamp('updated_at');
+            $table->timestamps();
             $table->primary('id');
         });
     }

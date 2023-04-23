@@ -59,6 +59,7 @@ class SymbolSeeder extends Seeder
             'lot_size' => floatval($symbol['Round Lot Size']),
             'is_test' => $symbol['Test Issue'],
             'updated_at' => Carbon::now(),
+            'created_at' => Carbon::now(),
             'id' => Uuid::uuid4()->toString(),
         ];
     }
