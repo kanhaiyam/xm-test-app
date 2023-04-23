@@ -13,8 +13,8 @@ return [
     | The configuration values that will be used in the application
     |
     */
-    'api_key' => env('RAPID_API_KEY', '3d0a10fbfamshc59fb62e0f46678p1ba181jsnae826ed5e735'),
-    'api_host' => env('RAPID_API_HOST', 'yh-finance.p.rapidapi.com'),
+    'api_key' => env('RAPID_API_KEY', ''),
+    'api_host' => env('RAPID_API_HOST', ''),
 
     /*
     |--------------------------------------------------------------------------

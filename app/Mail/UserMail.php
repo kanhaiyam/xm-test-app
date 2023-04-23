@@ -32,7 +32,7 @@ class UserMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('example@example.com', 'Test Mail'),
+            from: new Address(config('mail.from.address'), 'XM Test Mail'),
             subject: $this->subject,
         );
     }
